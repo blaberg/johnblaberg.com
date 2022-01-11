@@ -3,5 +3,5 @@ module.exports = {
     siteUrl: "https://johnblaberg.com",
     title: "johnblaberg.com",
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-postcss`],
 };
