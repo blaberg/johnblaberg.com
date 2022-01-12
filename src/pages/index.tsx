@@ -18,10 +18,14 @@ const IndexPage = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    allFile {
+  {
+    allMdx(sort: { order: DESC, fields: frontmatter___date }) {
       nodes {
-        name
+        frontmatter {
+          title
+          date(formatString: "MMMM D, YYYY")
+        }
+        id
       }
     }
   }
