@@ -21,9 +21,15 @@
     "gatsby-plugin-postcss": "^5.4.0",
     "gatsby-plugin-sharp": "^4.5.0",
     "gatsby-source-filesystem": "^4.5.0",
+    "jest": "^27.4.7",
     "postcss": "^8.4.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "tailwindcss": "^3.0.12"
+  },
+  "devDependencies": {
+    "@einride/eslint-plugin": "^4.4.0",
+    "eslint": "^7.32.0",
+    "prettier": "^2.5.1"
   }
 }
