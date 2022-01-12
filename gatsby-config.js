@@ -4,8 +4,8 @@ module.exports = {
     title: "johnblaberg.com",
   },
   plugins: [
-      `gatsby-plugin-postcss`,
-      'gatsby-plugin-image',
-      'gatsby-plugin-sharp'
+    `gatsby-plugin-postcss`,
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
   ],
-};
+}
