@@ -1,18 +1,30 @@
-import { Link } from "gatsby";
-import * as React from "react";
+import { Link, graphql } from "gatsby"
+import * as React from "react"
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <main>
       <title>Home Page</title>
-      <div className="bg-blue-400">
-        <h1>Welcome to my Gatsby site!</h1>
-        <Link to="/about">About</Link>
-        <p>I&apos;m making this by following the Gatsby Tutorial.</p>
-      </div>
+      <h1>Welcome to my Gatsby site!</h1>
+      <Link to="/about">About</Link>
+      <ul>
+        {data.allFile.nodes.map((node) => (
+          <li key={node.name}>{node.name}</li>
+        ))}
+      </ul>
     </main>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export const query = graphql`
+  query {
+    allFile {
+      nodes {
+        name
+      }
+    }
+  }
+`
+
+export default IndexPage

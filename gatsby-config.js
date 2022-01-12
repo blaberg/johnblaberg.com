@@ -13,5 +13,12 @@ module.exports = {
         icon: "src/images/favicon.png",
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog",
+        path: `${__dirname}/blog`,
+      },
+    },
   ],
-};
+}

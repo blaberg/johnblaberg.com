@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from "react"
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
         Gatsby.
       </p>
     </main>
-  );
-};
+  )
+}
 
-export default About;
+export default About
