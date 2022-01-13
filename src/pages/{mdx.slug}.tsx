@@ -1,25 +1,19 @@
 import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import * as React from "react"
+import Layout from "../components/Layout"
 
 const PostTemplate = ({ data }) => {
-  const image = getImage(data.mdx.frontmatter.hero_image)
-
   return (
-    <main>
-      <title>{data.mdx.frontmatter.title}</title>
-      <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
-      <p>
-        Photo Credit:{" "}
-        <a href={data.mdx.frontmatter.hero_image_credit_link}>
-          {data.mdx.frontmatter.hero_image_credit_text}
-        </a>
-      </p>
-      <h1>{data.mdx.frontmatter.title}</h1>
-      <p>{data.mdx.frontmatter.date}</p>
-      <MDXRenderer>{data.mdx.body}</MDXRenderer>
-    </main>
+    <Layout pageTitle={data.mdx.frontmatter.title}>
+      <article>
+        <h1 className="text-4xl font-bold">{data.mdx.frontmatter.title}</h1>
+        <p className="text-gray-700">{data.mdx.frontmatter.date}</p>
+        <div className="prose mt-6">
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        </div>
+      </article>
+    </Layout>
   )
 }
 
@@ -30,14 +24,6 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        hero_image_alt
-        hero_image_credit_link
-        hero_image_credit_text
-        hero_image {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
       }
     }
   }
