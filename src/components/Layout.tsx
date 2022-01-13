@@ -5,7 +5,7 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div>
       <title>{pageTitle} · John Blåberg Kristoffersson</title>
-      <div className="w-1/2 mx-auto">
+      <div className="max-w-2xl mx-auto">
         <Navbar />
         <main>{children}</main>
       </div>
