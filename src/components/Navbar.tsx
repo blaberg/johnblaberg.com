@@ -3,7 +3,7 @@ import * as React from "react"
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex flex-row justify-between py-6">
+    <nav className="w-full flex flex-row justify-between pt-8 pb-20">
       <div className="flex flex-row">
         <Link className="text-3xl w-1/2 font-bold" to="/">
           John Blåberg Kristoffersson
