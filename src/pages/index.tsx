@@ -1,11 +1,10 @@
 import { Link, graphql } from "gatsby"
 import * as React from "react"
+import Layout from "../components/Layout"
 
-// markup
 const IndexPage = ({ data }) => {
   return (
-    <main>
-      <title>Home Page</title>
+    <Layout pageTitle="John Blåberg Kristoffersson">
       <h1>Welcome to my Gatsby site!</h1>
       <Link to="/about">About</Link>
       {data.allMdx.nodes.map((node) => (
@@ -16,7 +15,7 @@ const IndexPage = ({ data }) => {
           <p>Posted: {node.frontmatter.date}</p>
         </article>
       ))}
-    </main>
+    </Layout>
   )
 }
 
