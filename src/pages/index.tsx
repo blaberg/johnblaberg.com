@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 const IndexPage = ({ data }) => {
   return (
-    <Layout pageTitle="John Blåberg Kristoffersson">
+    <Layout pageTitle="Home">
       <h1>Welcome to my Gatsby site!</h1>
       <Link to="/about">About</Link>
       {data.allMdx.nodes.map((node) => (
