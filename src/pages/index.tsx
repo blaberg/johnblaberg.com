@@ -8,11 +8,14 @@ const IndexPage = ({ data }) => {
       <title>Home Page</title>
       <h1>Welcome to my Gatsby site!</h1>
       <Link to="/about">About</Link>
-      <ul>
-        {data.allFile.nodes.map((node) => (
-          <li key={node.name}>{node.name}</li>
-        ))}
-      </ul>
+      {data.allMdx.nodes.map((node) => (
+        <article key={node.id}>
+          <h2>
+            <Link to={node.slug}>{node.frontmatter.title}</Link>
+          </h2>
+          <p>Posted: {node.frontmatter.date}</p>
+        </article>
+      ))}
     </main>
   )
 }
@@ -26,6 +29,7 @@ export const query = graphql`
           date(formatString: "MMMM D, YYYY")
         }
         id
+        slug
       }
     }
   }
