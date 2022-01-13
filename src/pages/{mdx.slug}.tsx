@@ -1,6 +1,6 @@
 import { graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import * as React from "react"
 
 const PostTemplate = ({ data }) => {
@@ -10,6 +10,12 @@ const PostTemplate = ({ data }) => {
     <main>
       <title>{data.mdx.frontmatter.title}</title>
       <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
+      <p>
+        Photo Credit:{" "}
+        <a href={data.mdx.frontmatter.hero_image_credit_link}>
+          {data.mdx.frontmatter.hero_image_credit_text}
+        </a>
+      </p>
       <h1>{data.mdx.frontmatter.title}</h1>
       <p>{data.mdx.frontmatter.date}</p>
       <MDXRenderer>{data.mdx.body}</MDXRenderer>
