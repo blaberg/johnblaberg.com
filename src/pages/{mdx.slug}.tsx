@@ -9,7 +9,7 @@ const PostTemplate = ({ data }) => {
       <article>
         <h1 className="text-4xl font-bold">{data.mdx.frontmatter.title}</h1>
         <p className="text-gray-700">{data.mdx.frontmatter.date}</p>
-        <div className="prose mt-6">
+        <div className="prose mt-6 text-xl font-serif">
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </div>
       </article>
