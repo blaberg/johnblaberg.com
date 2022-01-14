@@ -8,9 +8,7 @@ const Layout = ({ pageTitle, children }) => {
       <Helmet htmlAttributes={{ lang: "en" }}>
         <meta charSet="utf-8" />
         <title>{pageTitle} · John Blåberg Kristoffersson</title>
-        <link rel="canonical" href="https://johnblaberg.com" />
       </Helmet>
-
       <div className="max-w-2xl mx-auto">
         <Navbar />
         <main>{children}</main>
