@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://johnblaberg.com",
     title: "johnblaberg.com",
+    description: "John Blåberg Kristoffersson's personal website and blog.",
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -9,6 +10,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-helmet",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
