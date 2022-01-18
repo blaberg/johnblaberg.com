@@ -18,7 +18,7 @@ const Contact = () => {
         </li>
         <li>
           <a href="https://github.com/blaberg" className="text-black">
-            Github
+            GitHub
           </a>
         </li>
         <li>
