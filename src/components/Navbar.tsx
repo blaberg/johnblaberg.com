@@ -5,8 +5,11 @@ const Navbar = () => {
   return (
     <nav className="w-full flex flex-row justify-between pt-8 pb-20">
       <div className="flex flex-row">
-        <Link className="text-3xl w-1/2 font-bold text-black hover:no-underline" to="/">
-          John Blåberg Kristoffersson
+        <Link
+          className="text-3xl text-secondary font-Archivo text-black hover:no-underline"
+          to="/"
+        >
+          John Kristoffersson
         </Link>
       </div>
       <div className="w-1/3 flex flex-row justify-between">

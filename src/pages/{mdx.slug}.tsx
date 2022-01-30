@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 const PostTemplate = ({ data }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <article>
+      <article className="max-w-2xl mx-auto">
         <h1 className="text-4xl font-bold">{data.mdx.frontmatter.title}</h1>
         <p className="text-gray-700">{data.mdx.frontmatter.date}</p>
         <div className="prose mt-6 text-xl font-serif">
