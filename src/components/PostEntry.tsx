@@ -6,7 +6,7 @@ const PostEntry = ({ node }) => {
   const image = getImage(node.frontmatter.hero_image)
 
   return (
-    <article className="w-1/3 p-2">
+    <article className="w-72">
       <GatsbyImage
         image={image}
         alt={node.frontmatter.hero_image_alt}

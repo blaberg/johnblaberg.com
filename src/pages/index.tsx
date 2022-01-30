@@ -1,12 +1,15 @@
 import { graphql } from "gatsby"
 import * as React from "react"
+import LatestPost from "../components/LatestPost"
 import Layout from "../components/Layout"
 import PostEntry from "../components/PostEntry"
 
 const IndexPage = ({ data }) => {
+  const latest = data.allMdx.nodes.shift()
   return (
     <Layout pageTitle="Home">
-      <div className="flex flex-row flex-wrap">
+      <LatestPost node={latest} />
+      <div className="flex flex-row flex-wrap justify-between mt-12">
         {data.allMdx.nodes.map((node) => (
           <PostEntry key={node.id} node={node} />
         ))}
