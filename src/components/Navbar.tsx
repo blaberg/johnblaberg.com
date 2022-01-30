@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="w-full flex flex-row justify-between pt-8 pb-20">
       <div className="flex flex-row">
         <Link
-          className="text-3xl text-secondary font-Archivo text-black hover:no-underline"
+          className="text-3xl font-Archivo text-black hover:no-underline"
           to="/"
         >
           John Kristoffersson
