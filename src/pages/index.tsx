@@ -1,4 +1,4 @@
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import * as React from "react"
 import Layout from "../components/Layout"
 import PostEntry from "../components/PostEntry"
@@ -6,9 +6,11 @@ import PostEntry from "../components/PostEntry"
 const IndexPage = ({ data }) => {
   return (
     <Layout pageTitle="Home">
-      {data.allMdx.nodes.map((node) => (
-        <PostEntry key={node.id} node={node} />
-      ))}
+      <div className="flex flex-row flex-wrap">
+        {data.allMdx.nodes.map((node) => (
+          <PostEntry key={node.id} node={node} />
+        ))}
+      </div>
     </Layout>
   )
 }
@@ -21,6 +23,12 @@ export const query = graphql`
           title
           date(formatString: "MMMM D, YYYY")
           description
+          hero_image_alt
+          hero_image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
         id
         slug
