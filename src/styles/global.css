@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    a{
-        @apply text-blue-400 hover:underline
-    }
+@layer base {
+  h1,
+  h2 {
+    @apply font-Archivo;
+  }
+  a {
+    @apply text-blue-400 hover:underline;
+  }
 }

@@ -4,32 +4,38 @@ import Layout from "../components/Layout"
 const Contact = () => {
   return (
     <Layout pageTitle="Contact">
-      <h2 className="font-bold text-3xl mb-6">Contact</h2>
-      <ul>
-        <li>
-          <a href="mailto:john.kristoffersson@gmail.com" className="text-black">
+      <article className="max-w-2xl mx-auto">
+        <h2 className="font-bold text-3xl mb-6">Contact</h2>
+        <h3 className="text-xl font-Archivo">
+          I would like to get in contact with you, how can I do that?
+        </h3>
+        <p className="mt-1">
+          The easiest way is to send me an email at{" "}
+          <a href="mailto:john.kristoffersson@gmail.com">
             john.kristoffersson@gmail.com
           </a>
-        </li>
-        <li>
-          <a href="tel:+46709308018" className="text-black">
-            +46 (0)70 930 80 18
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/blaberg" className="text-black">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/john-kristoffersson/"
-            className="text-black"
-          >
+          . If you are a bit talkative or simply in a rush you can call me at{" "}
+          <a href="tel:+46709308018">+46(0)709308018</a>.
+        </p>
+        <h3 className="text-xl font-Archivo mt-4">
+          Do you have any projects to show off?
+        </h3>
+        <p className="mt-1">
+          All my projects can be found on my{" "}
+          <a href="https://github.com/blaberg">GitHub</a>. This includes the
+          project I make for this blog, as well as the code for the blog itself.
+        </p>
+        <h3 className="text-xl font-Archivo mt-4">
+          Do you have any social media?
+        </h3>
+        <p className="mt-1">
+          I have a very flashy{" "}
+          <a href="https://www.linkedin.com/in/john-kristoffersson/">
             LinkedIn
-          </a>
-        </li>
-      </ul>
+          </a>{" "}
+          profile!
+        </p>
+      </article>
     </Layout>
   )
 }
