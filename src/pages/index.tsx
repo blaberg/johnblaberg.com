@@ -5,12 +5,12 @@ import Layout from "../components/Layout"
 import PostEntry from "../components/PostEntry"
 
 const IndexPage = ({ data }) => {
-  const latest = data.allMdx.nodes.shift()
+  const latest = data.allMdx.nodes[0]
   return (
     <Layout pageTitle="Home">
       <LatestPost node={latest} />
       <div className="flex flex-row flex-wrap justify-between mt-12">
-        {data.allMdx.nodes.map((node) => (
+        {data.allMdx.nodes.slice(1).map((node) => (
           <PostEntry key={node.id} node={node} />
         ))}
       </div>

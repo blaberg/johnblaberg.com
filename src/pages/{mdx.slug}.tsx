@@ -8,8 +8,10 @@ const PostTemplate = ({ data }) => {
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <article className="max-w-2xl mx-auto">
         <h1 className="text-4xl font-bold">{data.mdx.frontmatter.title}</h1>
-        <p className="text-gray-700">{data.mdx.frontmatter.date}</p>
-        <div className="prose mt-6 text-xl font-serif">
+        <p className="text-gray-700 font-thin text-sm mt-0.5">
+          {data.mdx.frontmatter.date}
+        </p>
+        <div className="prose mt-12 text-xl font-serif">
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </div>
       </article>
