@@ -5,17 +5,17 @@ const Resume = () => {
   return (
     <Layout pageTitle="Resume">
       <article className="max-w-2xl mx-auto">
-        <h2 className="font-bold mb-4 text-xl lg:text-3xl lg:mb-6">
+        <h2 className="font-bold mb-4 text-xl md:text-3xl md:mb-6">
           Educational Experience
         </h2>
-        <div className="lg:grid lg:grid-cols-2 lg:gap-x-12 lg:gap-y-6 lg:text-lg">
+        <div className="md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-6 md:text-lg">
           <div className="font-semibold">
             <h3>Chalmers University of Technology</h3>
             <p>M.Sc. in Computer Systems and Networks</p>
             <p>Sep 2020 - Now (Graduating June 2022)</p>
             <p>Gothenburg, Sweden</p>
           </div>
-          <ul className="list-disc font-serif mt-2 ml-6 lg:m-0">
+          <ul className="list-disc font-serif mt-2 ml-6 md:m-0">
             <li>
               Focused on distributes systems and computer security. Completed
               Chalmers{" "}
@@ -32,13 +32,13 @@ const Resume = () => {
               at Einride.
             </li>
           </ul>
-          <div className="font-semibold mt-4 lg:m-0">
+          <div className="font-semibold mt-4 md:m-0">
             <h3>Chalmers University of Technology</h3>
             <p>B.Sc. in Computer Science and Engineering</p>
             <p>Sep 2017 - June 2020</p>
             <p>Gothenburg, Sweden</p>
           </div>
-          <ul className="list-disc font-serif mt-2 ml-6 lg:m-0">
+          <ul className="list-disc font-serif mt-2 ml-6 md:m-0">
             <li>
               Degree focused on low level programming, computer hardware, maths
               and physics.
@@ -51,17 +51,17 @@ const Resume = () => {
             </li>
           </ul>
         </div>
-        <h2 className="font-bold mb-4 text-xl mt-6 lg:text-3xl lg:mb-6 lg:mt-0">
+        <h2 className="font-bold mb-4 text-xl mt-6 md:text-3xl md:mb-6 md:mt-0">
           Work Experience
         </h2>
-        <div className="lg:grid lg:grid-cols-2 lg:gap-x-12 lg:gap-y-6 lg:text-lg">
+        <div className="md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-6 md:text-lg">
           <div className="font-semibold">
             <h3>Summer Intern</h3>
             <p>Einride</p>
             <p>Summer 2020</p>
             <p>Gothenburg, Sweden</p>
           </div>
-          <ul className="list-disc font-serif mt-2 ml-6 lg:m-0">
+          <ul className="list-disc font-serif mt-2 ml-6 md:m-0">
             <li>
               Part of the IT-Team with a focus on automation and security.
             </li>
@@ -73,13 +73,13 @@ const Resume = () => {
               test and wrote security policies.
             </li>
           </ul>
-          <div className="font-semibold  mt-4 lg:m-0">
+          <div className="font-semibold  mt-4 md:m-0">
             <h3>Student Ambassador</h3>
             <p>Spotify</p>
             <p>Jan 2020 - June 2021</p>
             <p>Gothenburg, Sweden</p>
           </div>
-          <ul className="list-disc font-serif mt-2 ml-6 lg:m-0">
+          <ul className="list-disc font-serif mt-2 ml-6 md:m-0">
             <li>
               Part of the team responsible for Spotify&apos;s employer marketing
               and events aimed at students in Europe and Asia. The purpose was
@@ -91,13 +91,13 @@ const Resume = () => {
               counterparts.
             </li>
           </ul>
-          <div className="font-semibold  mt-4 lg:m-0">
+          <div className="font-semibold  mt-4 md:m-0">
             <h3>Summer Intern</h3>
             <p>Infront Data</p>
             <p>Summer 2019</p>
             <p>Stockholm, Sweden</p>
           </div>
-          <ul className="list-disc font-serif mt-2 ml-6 lg:m-0">
+          <ul className="list-disc font-serif mt-2 ml-6 md:m-0">
             <li>
               Contact for stock analysts, helping our research team acquire
               information to create market consensuses for a wide range of
@@ -108,13 +108,13 @@ const Resume = () => {
               such as UBS, Deutsche Bank, Credit Suisse, and Morgan Stanley.
             </li>
           </ul>
-          <div className="font-semibold  mt-4 lg:m-0">
+          <div className="font-semibold  mt-4 md:m-0">
             <h3>Project Manager</h3>
             <p>Chalmers Student Union Promotion</p>
             <p>May 2018 - May 2019</p>
             <p>Gothenburg, Sweden</p>
           </div>
-          <ul className="list-disc font-serif mt-2 ml-6 lg:m-0">
+          <ul className="list-disc font-serif mt-2 ml-6 md:m-0">
             <li>
               Cooperated with companies to facilitate student events on their
               behalf at Chalmers
