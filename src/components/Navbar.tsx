@@ -3,7 +3,7 @@ import * as React from "react"
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex flex-row justify-between pt-8 pb-20">
+    <nav className="w-full flex flex-col lg:flex-row lg:justify-between pt-8 pb-12 lg:pb-20">
       <div className="flex flex-row">
         <Link
           className="text-3xl font-Archivo text-black hover:no-underline"
@@ -12,14 +12,14 @@ const Navbar = () => {
           John Kristoffersson
         </Link>
       </div>
-      <div className="w-1/3 flex flex-row justify-between">
-        <Link className="m-auto text-xl text-black" to="/about">
+      <div className="w-2/3 lg:w-1/3 flex flex-row justify-between">
+        <Link className="m-auto lg:text-xl text-black" to="/about">
           About
         </Link>
-        <Link className="m-auto text-xl text-black" to="/resume">
+        <Link className="m-auto lg:text-xl text-black" to="/resume">
           Resume
         </Link>
-        <Link className="m-auto text-xl text-black" to="/contact">
+        <Link className="m-auto lg:text-xl text-black" to="/contact">
           Contact
         </Link>
       </div>

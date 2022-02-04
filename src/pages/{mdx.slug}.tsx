@@ -7,11 +7,13 @@ const PostTemplate = ({ data }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <article className="max-w-2xl mx-auto">
-        <h1 className="text-4xl font-bold">{data.mdx.frontmatter.title}</h1>
+        <h1 className="text-xl font-bold lg:text-4xl">
+          {data.mdx.frontmatter.title}
+        </h1>
         <p className="text-gray-700 font-thin text-sm mt-0.5">
           {data.mdx.frontmatter.date}
         </p>
-        <div className="prose mt-12 text-xl font-serif">
+        <div className="prose mt-8 font-serif lg:mt-12 lg:text-xl">
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </div>
       </article>
