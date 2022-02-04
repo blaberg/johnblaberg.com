@@ -14,16 +14,16 @@ const LatestPost = ({ node }) => {
         <GatsbyImage
           image={image}
           alt={node.frontmatter.hero_image_alt}
-          className="h-40 rounded lg:h-80 lg:w-3/5"
+          className="h-40 rounded md:h-64 lg:h-80 lg:w-3/5"
         />
         <div className="lg:w-2/5 lg:pl-4">
           <p className="text-gray-700 font-thin text-sm mt-0.5">
             {node.frontmatter.date}
           </p>
-          <h2 className="text-xl font-Archivo text-black  mt-1 hover:underline lg:text-4xl">
+          <h2 className="text-xl font-Archivo text-black  mt-1 hover:underline md:text-4xl">
             {node.frontmatter.title}
           </h2>
-          <p className="text-sm mt-1 text-gray-800 lg:text-lg">
+          <p className="text-sm mt-1 text-gray-800 md:text-lg">
             {node.frontmatter.description}
           </p>
         </div>

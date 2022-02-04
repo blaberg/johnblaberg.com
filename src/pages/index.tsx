@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout pageTitle="Home">
       <LatestPost node={latest} />
-      <div className="flex flex-row flex-wrap justify-between lg:mt-12">
+      <div className="flex flex-row flex-wrap justify-between md:mt-12">
         {data.allMdx.nodes.slice(1).map((node) => (
           <PostEntry key={node.id} node={node} />
         ))}
