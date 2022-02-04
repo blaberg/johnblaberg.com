@@ -9,7 +9,7 @@ const Layout = ({ pageTitle, children }) => {
         <meta charSet="utf-8" />
         <title>{pageTitle} · John Blåberg Kristoffersson</title>
       </Helmet>
-      <div className="max-w-4xl mx-auto pb-32">
+      <div className="w-screen lg:max-w-4xl mx-auto px-8 pb-20 lg:pb-32 lg:px-0">
         <Navbar />
         <main>{children}</main>
       </div>

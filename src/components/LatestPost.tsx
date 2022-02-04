@@ -7,20 +7,23 @@ const LatestPost = ({ node }) => {
 
   return (
     <article>
-      <Link className="flex flex-row hover:no-underline" to={node.slug}>
+      <Link
+        className="flex flex-col lg:flex-row hover:no-underline"
+        to={node.slug}
+      >
         <GatsbyImage
           image={image}
           alt={node.frontmatter.hero_image_alt}
-          className="w-3/5 h-80 rounded"
+          className="h-40 rounded lg:h-80 lg:w-3/5"
         />
-        <div className="w-2/5 pl-4">
+        <div className="lg:w-2/5 lg:pl-4">
           <p className="text-gray-700 font-thin text-sm mt-0.5">
             {node.frontmatter.date}
           </p>
-          <h2 className="text-4xl hover:underline font-Archivo text-black hover:underline mt-1">
+          <h2 className="text-xl font-Archivo text-black  mt-1 hover:underline lg:text-4xl">
             {node.frontmatter.title}
           </h2>
-          <p className="text-lg mt-1 text-xl text-gray-800">
+          <p className="text-sm mt-1 text-gray-800 lg:text-lg">
             {node.frontmatter.description}
           </p>
         </div>
