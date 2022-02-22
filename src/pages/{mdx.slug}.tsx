@@ -1,7 +1,10 @@
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import * as React from "react"
 import Layout from "../components/Layout"
+
+deckDeckGoHighlightElement()
 
 const PostTemplate = ({ data }) => {
   return (

@@ -7,8 +7,24 @@ module.exports = {
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
+    "gatsby-remark-images",
     "gatsby-plugin-sharp",
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1200,
+            },
+          },
+          {
+            resolve: "gatsby-remark-highlight-code",
+          },
+        ],
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     {
