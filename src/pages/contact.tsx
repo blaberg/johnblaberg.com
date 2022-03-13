@@ -23,7 +23,8 @@ const Contact = () => {
         <p className="mt-1">
           All my projects can be found on my{" "}
           <a href="https://github.com/blaberg">GitHub</a>. This includes the
-          project I make for this blog, as well as the code for the blog itself.
+          projects I make for this blog, as well as the code for the blog
+          itself.
         </p>
         <h3 className="font-Archivo mt-4 md:text-xl">
           Do you have any social media?
