@@ -26,7 +26,7 @@ menu:
       weight: 20
 
 permalinks:
-  - posts: "/:title/"
+  posts: "/:title/"
 
 markup:
   goldmark:
