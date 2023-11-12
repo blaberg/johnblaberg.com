@@ -7,7 +7,7 @@ tags: [
     "tech",
 ]
 ---
-*I recently had to learn the fundamentals of DBT and how to create a useful data pipeline. While reading up on DBT, I also decided to read up on some SQL best practices. This document compiles the rules that I’ve found to be the most useful, with some additional rules that fit my coding style. *
+*I recently had to learn the fundamentals of DBT and how to create a useful data pipeline. While reading up on DBT, I also decided to read up on some SQL best practices. This document compiles the rules that I’ve found to be the most useful, with some additional rules that fit my coding style.*
 
 ---
 
