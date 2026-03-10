@@ -45,4 +45,24 @@
 
     <link rel="canonical" href="{{ .Permalink }}"/>
     <title>{{ .Title }}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    {{ with .Description | default .Summary | default .Site.Params.description -}}
+    <meta property="og:description" content="{{ . | plainify | truncate 200 }}">
+    {{ end -}}
+    {{ with .Params.image | default .Site.Params.defaultImage -}}
+    <meta property="og:image" content="{{ . | absURL }}">
+    {{ else -}}
+    <meta property="og:image" content="{{ "images/og-default.png" | absURL }}">
+    {{ end -}}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ .Title }}">
+    {{ with .Description | default .Summary | default .Site.Params.description -}}
+    <meta name="twitter:description" content="{{ . | plainify | truncate 200 }}">
+    {{ end -}}
 </head>

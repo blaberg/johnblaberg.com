@@ -32,3 +32,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    style: monokai
+    codeFences: true
+    guessSyntax: true
+    noClasses: false
