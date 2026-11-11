@@ -26,7 +26,7 @@ People looove this quote.
 This one wasn’t as obvious as I thought it would be. Of the articles that I read, there was only a slim majority that preferred capitalization on SQL keywords. The argument against it is that lowercase keywords are just as readable and you don’t have to constantly hold down your shift key. While I agree with this, I’m going to be traditional and go the uppercase route.
 - **Lines should not be longer than 120 characters. This includes comments.**\
 In the articles I read the single-line character limit was usually around 100 characters, some above and some below. However, since I mainly write Go code, and the default max length for a line in [golangci-lint is 120 characters](https://golangci-lint.run/usage/linters/#lll), I’m going with 120 characters.
-- **Aliases and CTEs names should be `snake_case`.**
+- **Aliases and CTE names should be `snake_case`.**
 - **Prefer `!=` to `<>`.**\
 I didn’t even know you could use `<>`.
 - **Prefer `WHERE` to `HAVING` when either would suffice.**\
@@ -45,7 +45,7 @@ For instance, a `users` table should have the ID field `user_id`. Then, if anoth
 
 ## Common Table Expressions (CTEs)
 
-- **Multiple CETs are better than large `SELECT` statements.**\
+- **Multiple CTEs are better than large `SELECT` statements.**\
 Large `SELECT` statements are much harder to read than multiple CTEs. If performance becomes an issue the CTEs can always be merged.
 - **Use CTEs to reference other tables.**\
 Think of them as import statements. This also lets you do some light filtering if you want.

@@ -40,7 +40,7 @@ that I took from that book.*
 
 3. **Houses and Apartments**
 >A house has two big advantages over other types of investments. You can live in it while you wait for the price to go 
-> up, and you buy it ib borrowed money.
+> up, and you buy it with borrowed money.
 > 
 > p. 102
 
@@ -50,7 +50,7 @@ This quote is then followed up with the following example (the numbers really sh
 * Loan: $80,000
 
 Now let’s say that the value of the house goes up by 3% per year. After one year the house will be worth $103,000. 
-While this looks like we got a return of 3% on investment since we only put up $20,000 of our own money, the actually 
+While this looks like we got a return of 3% on investment since we only put up $20,000 of our own money, the actual 
 return on invested capital is 15%. We leveraged our investment.
 
 After 15 years the return will be $$\\$100,000*1.03^{15}=\\$155,797 $$ or a 279% return on invested capital.
@@ -94,9 +94,9 @@ you will steadily lose money.
 ### Invest for the long term
 
 Twenty years or longer is the right time frame. This is long enough for stocks to bounce back from the nastiest of 
-corrections and long enough for returns to pile up. Since 1800 stocks have returned between 6,5 and 7 percent annually 
+corrections and long enough for returns to pile up. Since 1800 stocks have returned between 6.5 and 7 percent annually 
 (the book uses 11%, but I’ve updated this number to be more conservative)[[1]](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-strategy-and-corporate-finance-blog/markets-will-be-markets-an-analysis-of-long-term-returns-from-the-s-and-p-500). 
-A 6,5% annual return on a $10,000 investment will result in $35,236, or more than a 150% return - without you having to 
+A 6.5% annual return on a $10,000 investment will result in $35,236, or more than a 150% return - without you having to 
 do anything. This is also without taking into account possible dividends that the stock pays out.
 
 ### Buying Funds
@@ -147,7 +147,7 @@ people's opinions and the better you can evaluate other people's tips.
    company.
 
    The second kind of information is found in the annual and quarterly reports. How fast is the company growing, do 
-   they pay dividends, how much do they owe the bank, how much did they earn in the future and how much do they expect 
+   they pay dividends, how much do they owe the bank, how much did they earn in the past and how much do they expect 
    to earn, etc?
 
 ### Some words on P/E
@@ -157,7 +157,7 @@ annual earnings. The P/E helps you figure out if the stock is cheap or expensive
 
 The easiest way to use this tool is to compare the P/E to the historical norm.
 
-> In todays market, the P/E of the average stocks is about 16, and Disney’s P/E of 23 makes it a bit expensive relative 
+> In today's market, the P/E of the average stocks is about 16, and Disney’s P/E of 23 makes it a bit expensive relative 
 > to the average stock. But since Disney’s P/E ratio has moved from 12 to 40 over the past fifteen years, a P/E of 23 
 > for Disney is not out of line, historically. It is more expensive than the average stock because the company has been 
 > a terrific performer.
@@ -170,7 +170,7 @@ When this book was written we were starting to move into the information age. Wi
 more prevalent in homes you no longer had to wait for tomorrow's paper to know the price of your stocks. The book has a 
 nice comment on this that I think is still very relevant:
 
-> All this technology has a drawback: It can get you worked up about the daily gyrations. Letting you emotions go up 
+> All this technology has a drawback: It can get you worked up about the daily gyrations. Letting your emotions go up 
 > and down in sympathy with stocks can be a very exhaustive form of exercise, and it doesn't do you any good. Whether 
 > Disney rises, falls, or goes sideways today, tomorrow, or next month isn’t worth worrying about if you are a long 
 > term investor.
@@ -193,13 +193,13 @@ However, this is something that I have decided to follow, even if it means losin
 >p.158
 
 > In general, the faster a company can grow its earnings, the more investors will pay for those earnings. That’s why 
-> aggressive you companies can have P/E’s of 20 or higher.
+> aggressive young companies can have P/E’s of 20 or higher.
 > 
 >p. 159
 
 One tool that can be useful when evaluating how much investors are willing to pay for earnings at any given time, is 
-the market multiple. If you take a large group of companies, add their stock together, and divide by their earnings, 
-you get an average P/E ratio. you can then use this to compare any company to the average of the market.
+the market multiple. If you take a large group of companies, add their stock prices together, and divide by their earnings, 
+you get an average P/E ratio. You can then use this to compare any company to the average of the market.
 
 Some companies are “erratic earners”. The autos, the steels, and the heavy industries do well in certain economic 
 climates and worse in others. This often results in them having a lower P/E than more steady growers.
@@ -212,11 +212,11 @@ the investor.
 1. It can plow the money back into the business, in effect investing in itself. In the long run, this is highly 
 beneficial for the stockholder.
 2. It can waste the money on corporate jets, teak-paneled offices, marble in the executive bathrooms, exorbitant 
-executive salaries, or buying other companies and paying to much for them. This is bad for stockholders.
+executive salaries, or buying other companies and paying too much for them. This is bad for stockholders.
 3. A company can buy back its own shares and take them off the market. With fewer shares on the market, the remaining 
 shares become more valuable. This can be very good for the stockholder, especially if they do it when the shares are cheap.
 4. The company can pay a dividend. This is not entirely a positive thing, since it is giving up the chance to invest in 
-itself. Nevertheless, a dividend I very beneficial for the stockholder. Besides the monetary benefit, paying a dividend 
+itself. Nevertheless, a dividend is very beneficial for the stockholder. Besides the monetary benefit, paying a dividend 
 also has psychological benefits. No matter what happens, you will still collect the dividend. This gives you an extra 
 reason not to sell in a panic.
 
@@ -243,12 +243,12 @@ had to be able to answer three basic questions:
 3. Will it sell more sneakers next year, and the year after that?
 
 In the 1980s the prospect of sneakers could not have been brighter: everyone was wearing them. Yet, Nike got into a 
-slump where its sales, earnings, and future sales were declining. Both the Q1  Q2, and Q3 reports showed bad numbers. 
+slump where its sales, earnings, and future sales were declining. The Q1, Q2, and Q3 reports showed bad numbers. 
 But then the Q4 report arrived and showed the trend turning. The future sales were especially high, meaning that stores 
 around the country were buying more sneakers - which they wouldn't be doing if they did not think they were going to be 
 able to sell them. Nike’s Q1 report in 1988 was spectacular: sales up 10%, earnings up 68%, and future sales up 61%.
 
-During this time the share price had claimed $7 to $12.5. Then came the crash of 1987 and Nike’s share price returned 
+During this time the share price had climbed from $7 to $12.5. Then came the crash of 1987 and Nike’s share price returned 
 to $7. If you were not aware of Nike’s story you might have sold at this point, thinking that the company was doing 
 poorly, when in reality this was the start of a five-year climb to a share price of $90.
 
@@ -258,7 +258,7 @@ Johnson & Johnson’s 1994 annual report is another instance where the story doe
 had fallen from $57 to under $40 in March 1994.  But the numbers in the annual report looked nothing but strong. They 
 had increased their earnings while reducing employees, they had done share buybacks, they had low debt for a company 
 its size, and they invested heavily in R&D. At the time the average company was selling for 16 times its estimated 
-1995 earnings, while J&J were only selling for 11 - but J&J was a much better than you average company. Why was this?
+1995 earnings, while J&J were only selling for 11 - but J&J was a much better than your average company. Why was this?
 
 The reason the stock was low was due to the 1993 “healthcare scare”. In 1993, the US Congress was discussing healthcare 
 reform and investors were selling any and all companies in the healthcare sector. But when you read into J&Js report, 
