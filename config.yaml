@@ -1,10 +1,8 @@
 baseURL: 'https://johnblaberg.com/'
-languageCode: 'en-us'
+locale: 'en-us'
 title: 'John Blåberg Kristoffersson'
 theme: 'etch'
 enableInlineShortcodes: true
-pygmentsCodeFences: true
-pygmentsUseClasses: true
 
 params:
   description: "John's personal blog"
@@ -33,7 +31,6 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    style: monokai
     codeFences: true
     guessSyntax: true
     noClasses: false
