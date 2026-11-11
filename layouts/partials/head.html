@@ -11,12 +11,11 @@
     {{ end }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{ with .Site.Params.description -}}
+    {{ with .Description | default .Site.Params.description -}}
     <meta name="description" content="{{ . }}">
     {{ end }}
-    {{ printf `
-    <link rel="shortcut icon" href="%s">
-    ` ("favicon.ico" | absURL) | safeHTML }}
+    <link rel="icon" href="{{ "favicon.ico" | absURL }}" sizes="32x32">
+    <link rel="icon" href="{{ "favicon.svg" | absURL }}" type="image/svg+xml">
     {{ with .OutputFormats.Get "rss" -}}
     {{ printf `
     <link rel="%s" type="%s" href="%s" title="%s">
@@ -44,7 +43,24 @@
     ` $css.RelPermalink | safeHTML }}
 
     <link rel="canonical" href="{{ .Permalink }}"/>
-    <title>{{ .Title }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.highlight').forEach(block => {
+            const btn = document.createElement('button');
+            btn.className = 'copy';
+            btn.type = 'button';
+            btn.textContent = 'Copy';
+            btn.addEventListener('click', async () => {
+                await navigator.clipboard.writeText([...block.querySelectorAll('code')].pop().innerText);
+                btn.textContent = 'Copied';
+                setTimeout(() => (btn.textContent = 'Copy'), 1500);
+            });
+            block.appendChild(btn);
+        });
+    });
+    </script>
 
     <!-- Open Graph -->
     <meta property="og:title" content="{{ .Title }}">
@@ -55,8 +71,6 @@
     {{ end -}}
     {{ with .Params.image | default .Site.Params.defaultImage -}}
     <meta property="og:image" content="{{ . | absURL }}">
-    {{ else -}}
-    <meta property="og:image" content="{{ "images/og-default.png" | absURL }}">
     {{ end -}}
 
     <!-- Twitter Card -->
@@ -65,4 +79,6 @@
     {{ with .Description | default .Summary | default .Site.Params.description -}}
     <meta name="twitter:description" content="{{ . | plainify | truncate 200 }}">
     {{ end -}}
+
+    <script data-goatcounter="https://blaberg.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
